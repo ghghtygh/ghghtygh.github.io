@@ -1,5 +1,20 @@
 <!-- start custom head snippets -->
 
+<!-- 22.06.30 Mermaid 렌더링을 위해 추가 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.0.0/mermaid.min.js"></script>
+<script>
+var config = {
+    startOnReady:true,
+    theme: 'forest',
+    flowchart:{
+            useMaxWidth:false,
+            htmlLabels:true
+        }
+};
+mermaid.initialize(config);
+mermaid.init(undefined, '.language-mermaid');
+</script>
+
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
 
 <!-- end custom head snippets -->
